@@ -13,4 +13,22 @@ for(let i = 0; i < winterDays.length; i++) {
     }
 }
 
+let coldDays = [];
+let period = 0;
+
+for(let i = 0; i < winterDays.length; i++){
+    if (winterDays[i] < 0){
+        break;
+    } else {
+        coldDays.push(period);
+    }
+}
+
+let coldPeriod = 0;
+
+for (item of coldDays) {
+    coldPeriod++;
+}
 document.writeln(`Cold period was ${cold} times`);
+document.write("<br>");
+document.writeln(`Longest cold period was ${coldPeriod} times`);
