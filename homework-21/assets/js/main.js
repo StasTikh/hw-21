@@ -17,7 +17,7 @@ let coldDays = [];
 let period = 0;
 
 for(let i = 0; i < winterDays.length; i++){
-    if (winterDays[i] < 0){
+    if (winterDays[i] > 0){
         break;
     } else {
         coldDays.push(period);
